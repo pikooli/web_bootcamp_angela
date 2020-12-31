@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+}
+
+body {
+  margin : 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Redressed', cursive;
+  margin : 0;
+  color : #66BFBF;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color : #66BFBF;
+}
+h3, a {
+  color : #11999E;
+}
+.prenstation {
+  color: #40514E;
+}
+.status {
+  font-weight: normal;
+  line-height: 2;
+}
+
+hr {
+  border-top:  10px dotted black;
+  border-color: #EAF6F6;
+  width: 100px;
+}
+div {
+  margin : 0;
+}
+
+.copyright {
+    color : #EAF6F6;
+}
+.skill-row {
+  margin: 100px  auto;
+  width: 50%;
+  line-height: 2;
+}
+.skill-row > h3 , .skill-row > p {
+  text-align: left;
+}
+
+.skill-img1 {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill-img2 {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.top-container {
+  padding-top : 5%;
+  background-color: #EAF6F6;
+  position: relative;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 700px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 700px;
+  bottom: 300px
+
+}

@@ -1,0 +1,67 @@
+
+body, h1 {
+  margin : 0;
+}
+
+.relative-exe {
+  font-size: 0;
+}
+
+.middle-relative {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  left: 400px;
+  background-color: red;
+}
+
+.bottom-relative {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: blue;
+}
+
+.yellow-relative {
+  height: 200px;
+  width: 200px;
+  position : relative;
+  right: 400px;
+  display: inline-block;
+  background-color: yellow;
+}
+
+.abs-exe {
+  position: relative;
+  font-size: 0;
+  width: 600px;
+  height: 600px;
+  border : 1px solid black ;
+}
+
+.middle-abs {
+  height: 200px;
+  width: 200px;
+  position : absolute;
+  left: 400px;
+  top: 400px;
+  background-color: red;
+}
+
+.bottom-abs {
+    height: 200px;
+    width: 200px;
+    position : absolute;
+    left: 200px;
+    top: 200px;
+    background-color: blue;
+}
+
+.yellow-abs {
+  height: 200px;
+  width: 200px;
+  position : absolute;
+
+  background-color: yellow;
+}
