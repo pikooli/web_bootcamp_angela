@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+h1 {
+  color: #fef2bf;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+}
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  margin: 25px;
+}
+
+.clickOnBtn {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.gameOver {
+  background-color: red;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#blue {
+  background-color: blue;
+}
+footer {
+  margin-top: 70px;
+}
+
+.github {
+  color: white;
+  fill: white;
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
