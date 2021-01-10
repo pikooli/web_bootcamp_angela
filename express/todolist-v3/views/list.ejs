@@ -1,0 +1,56 @@
+<%- include("header") -%>
+	<div class="box heading">
+		<h1>It's <%= kindOfDay %>!</h1>
+	</div>
+	<div class="box heading" >
+		<h1>You are in the <%= path != "" ? path : "main" %> todo list</h1>
+	</div>
+	<div class="box">
+		<ul>
+			<% for(let i = 0; i < items.length; i++) {%>
+				<div class="item" name="<%= items[i]._id %>">
+					<input type="checkbox" name="<%= items[i]._id %>"
+					<%= items[i].checked ? "checked" : "" %>
+					onClick="clickCheckbox(this)"
+					/>
+					<p><%= items[i].todo %> </p>
+					<button class="delete" name="<%= items[i]._id %>" onclick="clickDeleteBox(this)">x</button>
+				</div>
+			<% } %>	
+		</ul>
+		
+		<form class="item" action="/" method="POST">
+				<input type="text" name="newItem" placeholder="New Item" required> 
+				<button class="button" type="submit" name="button" value="<%= path %>">+</button>
+		</form>
+	</div>
+	<script>
+		async function clickCheckbox(e){
+			let data = JSON.stringify({id : e.name, path : "<%= path %>"})
+			
+			await fetch("/checked", {
+				method :"POST",
+				headers : {
+					"Accept": "application/json",
+					"Content-Type" : "application/json"
+				},
+				body : data
+			})
+		}
+
+		async function clickDeleteBox(e){
+			let data = JSON.stringify({id : e.name, path : "<%= path %>"})
+		
+			await fetch("/delete", {
+				method :"PUT",
+				headers : {
+					"Accept": "application/json",
+					"Content-Type" : "application/json"
+				},
+				body : data
+			}).then(() => {
+				document.querySelector(`body div[name="${e.name}"]`).remove()
+			})
+		}
+	</script>
+<%- include("footer") -%>
