@@ -1,6 +1,6 @@
 <%- include("partials/header") -%>
 	<% postsArray.forEach((e) => { %>
-		<h1 class="mt-3"><%= e.title %></h1>
+		<a href="/post/<%= e.title %>"><h1 class="mt-3"><%= e.title %></h1></a>
 		<p class="ms-2">
 			<% if(e.post.length > 100) { %>
 			<%= e.post.substring(0, 100) + "..." %>
